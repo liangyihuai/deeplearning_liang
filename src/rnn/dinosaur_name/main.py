@@ -1,4 +1,4 @@
-from model.RNNModel import *
+from models.RNNModel import *
 
 data = open('data/dinos.txt', 'r').read()
 data= data.lower()
@@ -8,3 +8,4 @@ char_to_ix = { ch:i for i,ch in enumerate(sorted(chars)) }
 ix_to_char = { i:ch for i,ch in enumerate(sorted(chars)) }
 
 model(data, ix_to_char, char_to_ix)
+

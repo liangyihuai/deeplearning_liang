@@ -1,4 +1,4 @@
-from model.RNNModel import *
+from models.RNNModel import *
 
 data = open('data/dinos.txt', 'r').read()
 data= data.lower()
